@@ -5,15 +5,15 @@
 package baseline;
 
 
-import java.io.FileNotFoundException;
+
 
 
 public class Solution41 {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
         nameFile object = new nameFile();
-
+        object.initScanner();
         object.getAllNames();
 
     }

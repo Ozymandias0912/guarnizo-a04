@@ -8,10 +8,10 @@ import java.util.*;
 public class nameFile {
 
     private File file = new File("data/exercise41_input.txt");
-    public List<String> orderedNames = new ArrayList<>();
+    private List<String> orderedNames = new ArrayList<>();
     private Scanner input;
 
-    void nameFile(){
+    void initScanner(){
         try {
             input = new Scanner(file);
         } catch (FileNotFoundException e) {
@@ -20,15 +20,17 @@ public class nameFile {
     }
 
     public void getAllNames(){
-        //create an array that can fit 100 names
+
         while (input.hasNextLine()) {
             orderedNames.add(input.nextLine());
         }
         Collections.sort(orderedNames);
         //print a table with the sorted names
         System.out.printf("Total of %d names %n-----------------%n",orderedNames.size());
-        for( int i = 0; i < orderedNames.size() ; i++)
-        System.out.printf("%s%n",orderedNames.get(i));
+        for( int i = 0; i < orderedNames.size() ; i++){
+            System.out.printf("%s%n",orderedNames.get(i));
+        }
+
 
 
     }
