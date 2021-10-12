@@ -2,57 +2,33 @@ package baseline;
 
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class nameFile {
 
-    private String name = null;
-    private int numberOfNames = 0;
-    File file = new File("data/exercise41_input.txt");
-    Scanner input = new Scanner(file);
+    private File file = new File("data/exercise41_input.txt");
+    public List<String> orderedNames = new ArrayList<>();
+    private Scanner input;
 
-
-
-
-    public nameFile() throws FileNotFoundException {
-
-        name = "Juan";
-        //numberOfNames++;
-
+    void nameFile(){
+        try {
+            input = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
-
-    //nameFile object = new nameFile();
-
-    //public void getName(){
-    //    System.out.printf("%s%n", name);
-    //}
 
     public void getAllNames(){
         //create an array that can fit 100 names
-        String[] lines = new String[100];
-        int i = 0;
-        //read every name in the file and save it into the array
-        //also, count the number of names
         while (input.hasNextLine()) {
-            lines[i] = (input.nextLine());
-            numberOfNames++;
-            i++;
+            orderedNames.add(input.nextLine());
         }
-        //create another array with the appropriate size
-        String[] orderedNames = new String[numberOfNames];
-        //copy the names into the new, probably smaller, array
-        for(i = 0; i < numberOfNames; i++){
-            orderedNames[i] = lines[i];
-        }
-        //sort the array
-        Arrays.sort(orderedNames);
+        Collections.sort(orderedNames);
         //print a table with the sorted names
-        System.out.printf("Total of %d names %n-----------------%n", numberOfNames);
-        for( i = 0; i < numberOfNames ; i++)
-        System.out.printf("%s%n",orderedNames[i]);
+        System.out.printf("Total of %d names %n-----------------%n",orderedNames.size());
+        for( int i = 0; i < orderedNames.size() ; i++)
+        System.out.printf("%s%n",orderedNames.get(i));
 
 
     }

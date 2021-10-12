@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class nameFile{
+   FILE file
+   List<String> orderedNames
+   Scanner input
+
+   nameFile()
+   getAllNames()
+
+}
+
+class Solution41{
+    main()
+
+
+}
+
+Solution41 "uses" *-- nameFile
+
+
+@enduml
