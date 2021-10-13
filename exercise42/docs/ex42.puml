@@ -1,0 +1,30 @@
+@startuml
+class Solution42{
+main()
+}
+class reader{
+ - ArrayList<String> firstNames
+ - ArrayList<String> lastNames
+ - ArrayList<String> salaries
+ - ArrayList<Integer> parsedSalaries
+ - File file
+ - Scanner input
+
+ + reader()
+ + String getFirstName(int index)
+ + String getLastName(int index)
+ + int getSalary(int index)
+ + int getSizeArray()
+ + readFile()
+ + printArrays()
+
+}
+
+Solution42 <-- reader
+
+
+
+
+
+
+@enduml
