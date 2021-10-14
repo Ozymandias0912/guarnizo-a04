@@ -3,9 +3,6 @@ package baseline;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class fileManager {
@@ -16,7 +13,7 @@ public class fileManager {
     private String cssAnswer;
     private String jsAnswer;
 
-    public void fileManager(){
+    public  void fileManager(){//talk to ta about this sonarlint issue
         this.input = new Scanner(System.in);
         this.websiteName = "cs23";
         this.author = "Juan Guarnizo";
@@ -61,15 +58,17 @@ public class fileManager {
         String pathInput = "data/website/" +websiteName;
 
         File folders = new File(pathInput);
+
+
         if(folders.mkdirs()){
-            System.out.printf("Created ./%s%n", "data/website/" +websiteName);
-
-
-        }//fine
-        pathInput = "data/website/" +websiteName +"/index.html";
-        File fol = new File(pathInput);
-        if(fol.createNewFile()){
             System.out.printf("Created ./%s%n", pathInput);
+
+
+        }
+        String indexPathInput = pathInput +"/index.html";
+        File fol = new File(indexPathInput);
+        if(fol.createNewFile()){
+            System.out.printf("Created ./%s%n", indexPathInput);
         }
 
 
@@ -89,7 +88,7 @@ public class fileManager {
         //fix issues before this line
         if(jsAnswer.equals("yes") || jsAnswer.equals("YES") || jsAnswer.equals("y")
                 || jsAnswer.equals("Y") || jsAnswer.equals("Yes")){
-            String cssPath = "data/website/" + websiteName + "/js";
+            String cssPath = pathInput + "/js";
             File css = new File(cssPath);
             if(css.mkdir()){
                 System.out.printf("Created ./%s%n", cssPath);
@@ -99,7 +98,7 @@ public class fileManager {
 
         if(cssAnswer.equals("yes") || cssAnswer.equals("YES") || cssAnswer.equals("y")
         || cssAnswer.equals("Y") || cssAnswer.equals("Yes")){
-            String cssPath = "data/website/" + websiteName + "/css";
+            String cssPath = pathInput + "/css";
             File css = new File(cssPath);
             if(css.mkdir()){
                 System.out.printf("Created ./%s%n", cssPath);

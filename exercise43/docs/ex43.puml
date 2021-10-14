@@ -1,0 +1,25 @@
+@startuml
+class Solution43{
++main()
+}
+class fileManager{
+-Scanner input
+-String websiteName
+-String author
+-String cssAnswer
+-String jsAnswer
+
++fileManager()
++String getWebsiteName()
++String getAuthor()
++String getCssAnswer()
++String getJsAnswer()
++ask()
++createFolders()
+
+}
+
+Solution43 <-- fileManager
+
+
+@enduml
