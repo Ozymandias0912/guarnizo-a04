@@ -1,22 +1,14 @@
 
-S	java:S106."9Replace this use of System.out or System.err by a logger.(¹şŒèşÿÿÿÿ
-S	java:S1061"9Replace this use of System.out or System.err by a logger.(ğµ£Ëøÿÿÿÿ
-N	java:S1064"9Replace this use of System.out or System.err by a logger.(¥¯î
-N	java:S1067"9Replace this use of System.out or System.err by a logger.(€¢ĞÌ
-S	java:S106A"9Replace this use of System.out or System.err by a logger.(ËŒ“öüÿÿÿÿ
-S	java:S106H"9Replace this use of System.out or System.err by a logger.( §üÒüÿÿÿÿ
-N	java:S106_"9Replace this use of System.out or System.err by a logger.(ë›«
-N	java:S106i"9Replace this use of System.out or System.err by a logger.(ë›«
-F
-java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü
-E
-java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ
-F
-java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯
-d
-java:S1192="NDefine a constant instead of duplicating this literal "data/website/" 5 times.(ÈÑ§œ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(¹şŒèşÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(ğµ£Ëøÿÿÿÿ
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(¥¯î
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(€¢ĞÌ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.( §üÒüÿÿÿÿ
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(Éò½
+N	java:S106n"9Replace this use of System.out or System.err by a logger.(ë›«
+N	java:S106x"9Replace this use of System.out or System.err by a logger.(ë›«
 j
-java:S1192A"ODefine a constant instead of duplicating this literal "Created ./%s%n" 4 times.(ËŒ“öüÿÿÿÿ
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³×Á—
-g
-java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Åó¤€ıÿÿÿÿ
+java:S1192P"ODefine a constant instead of duplicating this literal "Created ./%s%n" 4 times.( §üÒüÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³×Á—
+b
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(½‘¿¸

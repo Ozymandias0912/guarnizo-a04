@@ -4,6 +4,7 @@
  */
 package baseline;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Solution43 {
@@ -16,7 +17,7 @@ public class Solution43 {
 
         web.ask();
 
-        web.createFolders();
+        File indexHtml = web.createFolders();
 
 
 

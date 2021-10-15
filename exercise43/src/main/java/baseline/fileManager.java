@@ -39,6 +39,22 @@ public class fileManager {
         return this.jsAnswer;
     }
 
+    public void setWebsiteName(String websiteName){
+         this.websiteName = websiteName;
+    }
+
+    public void setAuthor( String author){
+         this.author = author;
+    }
+
+    public void setCssAnswer(String cssAnswer){
+         this.cssAnswer = cssAnswer;
+    }
+
+    public void setJsAnswer(String jsAnswer){
+         this.jsAnswer = jsAnswer;
+    }
+
     public void ask(){
         System.out.println("Site name: ");
         websiteName = input.nextLine();
@@ -54,7 +70,7 @@ public class fileManager {
 
     }
 
-    public void createFolders() throws IOException {
+    public File createFolders() throws IOException {
         String pathInput = "data/website/" +websiteName;
 
         File folders = new File(pathInput);
@@ -106,7 +122,7 @@ public class fileManager {
         }
 
 
-
+        return fol;
     }//end create folders method
 
 
