@@ -1,0 +1,30 @@
+@startuml
+class Solution46{
++main()
+
+}
+
+class word{
+- String text
+- int frequency
+
++int getFrequency()
+
++String getText()
+
++ setFrequency(int frequency)
+
++ setText(String text)
+}
+
+class wordCounter{
+- File doc
+- ArrayList<word> list
+
++countWords()
++display()
+}
+Solution46 <-- wordCounter
+wordCounter <-- word
+
+@enduml
