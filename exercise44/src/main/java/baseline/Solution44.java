@@ -6,5 +6,12 @@ package baseline;
 
 public class Solution44 {
 
+    public static void main(String[] args) {
+        GsonManager gsonManager = new GsonManager();
+
+        gsonManager.GsonManager();
+
+        gsonManager.productSearch(gsonManager.ask());
+    }
 
 }
