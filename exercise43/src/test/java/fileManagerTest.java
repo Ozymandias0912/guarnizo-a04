@@ -46,6 +46,7 @@ public class fileManagerTest {
             e.printStackTrace();
         }
 
+        
         //checking if the html file was created as expected
         assertFalse( !html.exists());
     }
