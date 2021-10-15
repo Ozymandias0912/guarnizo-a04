@@ -6,30 +6,5 @@ package baseline;
 
 public class Solution44 {
 
-    /*
-    * PSEUDOCODE
-    *
-    *   //product class
-    *   String name
-    *   double price
-    *   int quantity
-    *
-    *
-    *   class() constructor
-    *
-    *   get methods
-    *   //end class
-    *
-    *   //GsonManager class
-    *   Gson gson
-    *   File f
-    *   String jsonArray
-    *   product[] productArray
-    *
-    *   GsonManager() constructor
-    *
-    *   productSearch()
-    *
-    *
-    * */
+
 }
