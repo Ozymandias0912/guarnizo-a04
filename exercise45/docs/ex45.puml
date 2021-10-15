@@ -1,0 +1,18 @@
+@startuml
+class Solution45{
++main()
+
+}
+class file{
+- File f
+-Scanner input
+
++askInput()
++String replace()
++output(String newContent)
++askInput(String path)
++setInput()
+}
+
+Solution45 <-- file
+@enduml
