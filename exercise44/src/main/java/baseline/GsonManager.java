@@ -30,8 +30,7 @@ public class GsonManager {
 
     }
 
-    public void productSearch(String productName){
-        int i = 0;
+    public void parse(){
         Scanner input = new Scanner(System.in);
 
         //read file and save info into string json array
@@ -52,8 +51,10 @@ public class GsonManager {
         jsonArray = jsonArray + "]";
         productArray = gson.fromJson(jsonArray, product[].class);
         //successful parsing!
+    }
 
-
+    public void productSearch(String productName){
+        int i = 0;
 
         //do this in a for loop key times
         for( i = 0; i < productArray.length; i++){
@@ -75,6 +76,9 @@ public class GsonManager {
 
     }//end productSearch() method
 
+    public String getProductArrayItem(int index){
+        return this.productArray[index].getName();
+    }
 
 
 }

@@ -10,7 +10,9 @@ class GsonManager{
 
 +GsonManager()
 +String ask()
++parse()
 +productSearch(String productName)
++getProductArrayItem(int index)
 }
 class product{
 - String name;

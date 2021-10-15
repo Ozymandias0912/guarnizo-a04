@@ -11,6 +11,8 @@ public class Solution44 {
 
         gsonManager.GsonManager();
 
+        gsonManager.parse();
+
         gsonManager.productSearch(gsonManager.ask());
     }
 
