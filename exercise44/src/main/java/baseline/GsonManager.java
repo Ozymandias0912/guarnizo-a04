@@ -16,12 +16,7 @@ public class GsonManager {
     public void GsonManager(){
 
         this.jsonArray = " ";
-        /*this.productArray = new product[100];
 
-        for(int i = 0; i < 100; i++){
-            this.productArray[i] = new product();
-        }
-        */
     }
 
     public String ask(){
@@ -47,7 +42,7 @@ public class GsonManager {
             e.printStackTrace();
         }
 
-        input.nextLine();//reading the first bracket {
+        input.nextLine();//reading the first bracket
         input.useDelimiter(":");
         input.next();
         input.useDelimiter("");

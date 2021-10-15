@@ -1,0 +1,28 @@
+@startuml
+class Solution44{
++main()
+}
+class GsonManager{
+- Gson gson
+- File f
+- String jsonArray
+- product[] productArray
+
++GsonManager()
++String ask()
++productSearch(String productName)
+}
+class product{
+- String name;
+- double price;
+- int quantity;
+
+
++String getName()
++double getPrice()
++int getQuantity()
+}
+
+Solution44 <-- GsonManager
+GsonManager <-- product
+@enduml
